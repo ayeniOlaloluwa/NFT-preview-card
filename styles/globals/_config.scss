@@ -1,0 +1,38 @@
+@use '../util/functions' as f;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-blue);
+    height: 100vh;
+    line-height: 1.1;
+    font-family: var(--mainfont);
+    overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+P {
+    font-size: f.rem(18);
+}
+
+.spacing > * + * {
+    margin-top: var(--spacer, .8rem);
+}
