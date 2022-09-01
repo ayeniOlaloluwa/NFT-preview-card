@@ -54,7 +54,7 @@ main {
   place-items: center;
   align-items: center;
   width: 25em;
-  height: 550px;
+  height: 560px;
   margin-inline: auto;
   overflow: hidden;
 }
@@ -83,7 +83,7 @@ main {
 .container__header {
   align-self: start;
   font-weight: var(--weight-bold);
-  font-size: clamp(2.25rem, 2vw + 1rem, 3.25rem);
+  font-size: clamp(2.25rem, 2vw + 1rem, 3rem);
   color: var(--clr-White);
   width: 100%;
   cursor: pointer;
@@ -136,8 +136,8 @@ main {
   padding-bottom: 5px;
 }
 .container__footer .image {
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
   filter: drop-shadow(1px 0 0 white) drop-shadow(0 1px 0 white) drop-shadow(-1px 0 0 white) drop-shadow(0 -1px 0 white);
   transform: scale(1.1);
@@ -161,8 +161,8 @@ main {
 
 .img {
   position: relative;
+  overflow: hidden;
   cursor: pointer;
-  width: 280px;
 }
 .img::after {
   content: "";
@@ -173,7 +173,6 @@ main {
   width: 100%;
   background-color: var(--clr-cyan);
   opacity: 0;
-  transition: opacity 350ms ease-in-out;
 }
 .img:hover::after {
   top: 0;
@@ -190,5 +189,4 @@ main {
   width: 100%;
   z-index: 1111;
   opacity: 0;
-  transition: opacity 350ms ease-in-out;
 }/*# sourceMappingURL=styles.css.map */
